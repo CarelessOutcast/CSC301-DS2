@@ -1,4 +1,4 @@
-# Data Structuers 2 
+# Data Structures 2 
 
 Carlos Tapia
 
