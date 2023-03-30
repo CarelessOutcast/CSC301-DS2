@@ -8,11 +8,11 @@ public class DebuggerExercise {
      * do NOT edit the value of YOUR_NAME. Changing YOUR_NAME will change which
      * maze you get back, which might invalidate all your hard work!
      */
-    private static final String YOUR_NAME = "TODO: Replace this string with your name.";
+    private static final String YOUR_NAME = "Carlos Tapia";
 
     /* Change these constants to contain the paths out of your mazes. */
-    private static final String PATH_OUT_OF_MAZE        = "NEESESNWSWWSNESEE";
-    private static final String PATH_OUT_OF_TWISTY_MAZE = "WSWNEEESNEWS";
+    private static final String PATH_OUT_OF_MAZE        = "ESSWNSENNNESSSNNESS";
+    private static final String PATH_OUT_OF_TWISTY_MAZE = "NSNESNNSN";
 
     public static void main(String[] args) {
         MazeCell startLocation = MazeUtilities.mazeFor(YOUR_NAME);
