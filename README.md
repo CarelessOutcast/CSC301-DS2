@@ -18,6 +18,14 @@ By: Carlos Tapia
 - Put: Place Node into list; Place node in Sorted order;
 - RPut: Place Node into list Recursively; Place node in sorted order;
 
-
+## Homework #3: Recursive Integer Tree Functions 
+( Implement recursive functions for following conditions. )
+- Get height of trees
+- Get number of odd key values of tree
+- Check if two trees are equal in size and shape
+- Get number of nodes at certain depth
+- Get number of nodes above a certain depth
+- Check if a tree is perfectly balanced
+- Remove subtree if it starts with an odd node
 
 
