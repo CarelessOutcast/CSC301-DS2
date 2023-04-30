@@ -119,7 +119,7 @@ public class SequentialSearchST<Key extends Comparable<Key>, Value> {
         if (key == null) throw new IllegalArgumentException("argument to get() is null"); 
         for (Node temp = first; temp != null; temp = temp.next) {
             if (key.equals(temp.key)) return temp.val;
-            if (key.compareTo(temp.key) < 0 ) break; 
+            if (key.compareTo(temp.key) <= 0 ) break; 
         }
         return null;
     }
@@ -198,7 +198,7 @@ public class SequentialSearchST<Key extends Comparable<Key>, Value> {
             	n--;
             	return;
             }
-            if (key.equals(temp.next.key)) {
+            if (key.compareTo(temp.next.key) <= 0) {
                 
                 temp.next = temp.next.next;
                 n--;
@@ -206,7 +206,7 @@ public class SequentialSearchST<Key extends Comparable<Key>, Value> {
             }
             temp = temp.next;
         }
-        if (key.equals(temp.key))
+        if (key.compareTo(temp.key) <= 0)
         {
         	first = first.next;
         	n--;

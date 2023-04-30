@@ -126,7 +126,7 @@ public class RSequentialSearchST<Key extends Comparable<Key>, Value> {
     private Node get(Node front, Key key)
     {
     	if (front == null) return null;
-    	if (key.equals(front.key)) return front;
+    	if (key.compareTo(front.key) < 0) return front;
     	return get(front.next, key);
     }
 
@@ -160,7 +160,7 @@ public class RSequentialSearchST<Key extends Comparable<Key>, Value> {
         	return;
         }
         // If new key comes before the first item; Insert at front
-        if (key.compareTo(first.key) < 0)
+        if (key.compareTo(first.key) <= 0)
         {
         	first = new Node(key,val,first);
         	n++;

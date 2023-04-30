@@ -8,8 +8,8 @@ import org.junit.rules.Timeout;
 
 public class HW3Test {
 
-	//@Rule
-	//public Timeout globalTimeout = Timeout.seconds(1);
+	@Rule
+	public Timeout globalTimeout = Timeout.seconds(1);
 
 
 	@Test
